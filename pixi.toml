@@ -1,0 +1,18 @@
+
+[workspace]
+name = "smoking-analysis"
+version = "0.1.0"
+channels = ["conda-forge"]
+platforms = ["osx-arm64", "osx-64"]
+
+[feature.smoke.dependencies]
+python = ">=3.12,<3.13"
+pandas = "*"
+numpy = "*"
+matplotlib = "*"
+seaborn = "*"
+ipykernel = "*"
+pre-commit = "*"
+
+[environments]
+smoke = ["smoke"]
